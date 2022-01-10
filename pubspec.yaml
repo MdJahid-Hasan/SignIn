@@ -30,6 +30,8 @@ dependencies:
   flutter:
     sdk: flutter
   font_awesome_flutter: ^9.2.0
+  email_validator: ^2.0.1
+  gender_picker: ^1.1.0
 
 
   # The following adds the Cupertino Icons font to your application.

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:signin_page/screen/signup/signup_screen.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({Key? key}) : super(key: key);
+  static const routeName = "/signin";
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +85,9 @@ class SignIn extends StatelessWidget {
                 Container(
                   width: 300,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, SignUp.routeName);
+                    },
                     child: Text(
                       "Sign Up",
                       style: TextStyle(fontWeight: FontWeight.bold),
